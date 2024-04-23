@@ -27,6 +27,10 @@ body {
   background-color: rgb(254, 249, 242);
 }
 
+.fonts--remove-margins {
+  margin: 0;
+}
+
 /* font styles */
 
 h1 {
@@ -54,16 +58,20 @@ h2 {
   border-bottom: 1px solid;
 }
 
-.fonts--h2-bold {
+.fonts--bold {
   font-weight: 700;
 }
 
-.fonts--h2-semibold {
+.fonts--semibold {
   font-weight: 500;
 }
 
-.fonts--h3-regular {
+.fonts--regular {
   font-weight: 300;
+}
+
+.fonts--light {
+  font-weight: 100;
 }
 
 /* main header - desktop */
@@ -112,26 +120,13 @@ nav {
 .grid {
   margin-top: 64px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 24px;
+  row-gap: 64px;
+  column-gap: 24px;
   flex-wrap: wrap;
 }
 
-/* portfolio */
-.portfolio-item-container {
-  margin: 0;
-  background-color: rgb(188, 228, 253);
-  height: 28vw;
-  width: 42vw;
-  color: rgba(135, 206, 250, 0);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
+/* invite */
 .invite-image {
   height: auto;
   max-width: 600px;
@@ -139,7 +134,45 @@ nav {
   box-shadow: 0px 2px 2px rgb(0 0 0 / 20%);
 }
 
-.portfolio-cover-link {
+/* photo links */
+
+.link-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 20vw;
+  min-width: 240px;
+  text-align: center;
+  position: relative;
+  background-color: rgb(255, 250, 244);
+  padding: 16px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgb(0 0 0 / 10%);
+}
+
+.link-image-container {
+  margin: 0px;
+  height: 20vw;
+  min-height: 240px;
+  width: 100%;
+  min-width: inherit;
+  color: rgba(135, 206, 250, 0);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-image {
+  height: inherit;
+  min-height: inherit;
+  width: inherit;
+  min-width: inherit;
+  object-fit: cover;
+}
+
+.link-overlay {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -150,38 +183,21 @@ nav {
   text-align: center;
   color: rgba(240, 248, 255, 0);
   text-decoration: none;
+  top: 0px;
 }
 
-.portfolio-cover-link:hover {
+.link-overlay:hover {
   z-index: 999;
   position: absolute;
   color: rgb(37, 37, 37);
-  background-color: rgba(255, 255, 255, 0.85);
-}
-
-/* art */
-.art-item-container {
-  margin: 0;
-  background-color: rgb(188, 228, 253);
-  height: 20vw;
-  width: 20vw;
-  color: rgba(135, 206, 250, 0);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.art-cover-image {
-  height: inherit;
-  width: inherit;
-  object-fit: cover;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 2px 2px rgb(0 0 0 / 15%);
 }
 
 /* footer */
 footer {
-  margin-top: 64px;
+  margin-top: 88px;
   display: flex;
   justify-content: center;
   flex-direction: column;
