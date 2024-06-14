@@ -41,6 +41,7 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 24pt;
+  margin: 8px;
 }
 
 .fonts--main-nav {
@@ -109,7 +110,7 @@ nav {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  margin: 2vw 12vw 0vw 12vw;
+  margin: 2vw 8vw 0vw 8vw;
 }
 
 .font-max-width {
