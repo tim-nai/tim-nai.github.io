@@ -109,7 +109,7 @@ nav {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  margin: 4vw 12vw 0vw 12vw;
+  margin: 2vw 12vw 0vw 12vw;
 }
 
 .font-max-width {
@@ -118,7 +118,7 @@ nav {
 
 /* grid */
 .grid {
-  margin-top: 64px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   row-gap: 64px;
